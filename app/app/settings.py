@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_project_test1',
+        'NAME': 'crowd_funding_django',
         'USER': 'postgres',
         'PASSWORD': '123',
         'HOST': 'localhost',

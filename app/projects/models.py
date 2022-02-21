@@ -43,7 +43,7 @@ class Project(models.Model):
 
 
 #
-# #####################################################
+# # #####################################################
 class Image(models.Model):
     id = models.AutoField(primary_key=True)
     project = models.ForeignKey('Project',on_delete=models.CASCADE,blank=True)
@@ -68,10 +68,8 @@ class Comment(models.Model):
     owner = models.ForeignKey(Profile, null=True, blank=True, on_delete=models.SET_NULL)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
-
     def __str__(self):
         return str(self.body)
-
     class Meta:
         ordering = ['-created']
 
